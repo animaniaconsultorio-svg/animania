@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animanía - Educación canina</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo_2.jpeg" alt="Animanía Logo" />
+      </a>
+      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="tarifas.html">Tarifas</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Ilustración canina">
+    <!-- Ilustración completa, siempre visible -->
+    <picture class="hero-media" aria-hidden="true">
+      <!-- Si mañana tienes una @2x, descomenta la línea de arriba y añade el srcset -->
+      <img src="assets/images/Roma_chispa_fondo.png" alt="" loading="eager" width="1800" height="900" />
+    </picture>
+
+    <div class="container hero-content">
+      <h1>Educación canina desde la ciencia y la empatía</h1>
+      <p>Te acompaño a entender y disfrutar de tu perro con rutinas reales y cercanas.</p>
+      <a class="btn" href="tarifas.html" 
+        rel="noopener noreferrer">
+        Reserva tu asesoría
+      </a>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="section section-benefits">
+    <div class="container">
+      <div class="section-head">
+        <h2>¿Por qué elegir Animanía?</h2>
+        <ul class="pills">
+          <li>Planes personalizados</li>
+        </ul>
+      </div>
+
+      <div class="benefits">
+        <article class="benefit">
+          <div class="benefit-icon" aria-hidden="true">🧪</div>
+          <h3 class="benefit-title">Ciencia aplicada</h3>
+          <p>Diseñamos cada ejercicio según cómo aprenden los perros: paso a paso, sin confusión ni castigos.</p>
+        </article>
+
+        <article class="benefit">
+          <div class="benefit-icon" aria-hidden="true">👀</div>
+          <h3 class="benefit-title">Observación real</h3>
+          <p>Antes de proponer ejercicios, analizamos qué le activa, cómo responde y qué señales muestra.</p>
+        </article>
+
+        <article class="benefit">
+          <div class="benefit-icon" aria-hidden="true">🧠</div>
+          <h3 class="benefit-title">Gestión emocional</h3>
+          <p>Usamos principios de aprendizaje para que tu perro <strong>entienda</strong>, no para que obedezca por
+            miedo.</p>
+        </article>
+      </div>
+
+      <div class="benefits-strip" role="presentation">
+        <span>Basado en evidencia</span>
+        <span>Sin castigos</span>
+        <span>Metodología clara</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios Destacados -->
+  <section class="section bg-light section-services-showcase" id="servicios">
+    <div class="container">
+      <h2>Servicios Destacados</h2>
+
+      <div class="grid services-grid">
+        <!-- 1. Sesiones presenciales -->
+        <article class="service-card service-cta">
+          <div class="icon-badge" aria-hidden="true">🐕</div>
+          <h3>Sesiones presenciales</h3>
+          <p>
+            Trabajo contigo y tu perro en vuestro entorno real: paseos, visitas y rutina en casa.
+            Ejercicios claros y medibles para ver cambios desde el primer día.
+          </p>
+          <a class="btn" href="tarifas.html">
+            Ver disponibilidad
+          </a>
+        </article>
+
+        <!-- 2. Asesorías online -->
+        <article class="service-card service-cta">
+          <div class="icon-badge" aria-hidden="true">💻</div>
+          <h3>Asesorías online</h3>
+          <p>
+            Para familias que viven lejos o prefieren hacerlo desde casa. Revisamos tus vídeos,
+            analizamos el entorno y te dejo un plan práctico para aplicar al momento.
+          </p>
+          <a class="btn" href="tarifas.html">
+            Reserva online
+          </a>
+        </article>
+
+        <!-- 3. Comunidad Animanía -->
+        <article class="service-card service-cta">
+          <div class="icon-badge" aria-hidden="true">💬</div>
+          <h3>Comunidad Animanía</h3>
+          <p>
+            Espacio privado donde seguimos aprendiendo: tips semanales, retos, vídeos y soporte grupal.
+            No estás sola: creces acompañada.
+          </p>
+          <a class="btn" href="https://t.me/+ZTZWPc4dD4ZhZjk0" target="_blank" rel="noopener noreferrer">
+            Únete a la comunidad
+          </a>
+        </article>
+      </div>
+
+      <a class="btn-secondary" href="services.html" style="margin-top:1rem">Ver todos los servicios</a>
+    </div>
+  </section>
+
+  <!-- Mi metodología (3 columnas) -->
+  <section class="section section-method2" id="metodologia">
+    <div class="container">
+      <header class="method2-head">
+        <h2>Mi metodología</h2>
+        <p class="method2-sub">
+          Tres pilares para una convivencia tranquila: ciencia, entorno y gestión emocional.
+        </p>
+      </header>
+
+      <div class="method2-steps">
+        <div class="step">
+          <div class="step-dot">🧠</div>
+          <h3>Ciencia</h3>
+          <small>Bases de aprendizaje y neurociencia</small>
+        </div>
+        <div class="step">
+          <div class="step-dot">🏡</div>
+          <h3>Entorno</h3>
+          <small>Rutinas, contexto y coherencia</small>
+        </div>
+        <div class="step">
+          <div class="step-dot">💚</div>
+          <h3>Emoción</h3>
+          <small>Gestión del estrés y calma</small>
+        </div>
+      </div>
+
+      <div class="method2-row">
+        <article class="method2-card">
+          <div class="card-icon">🧠</div>
+          <h3 class="card-title">Aprendizaje con base científica</h3>
+          <p>
+            Aplico los principios del aprendizaje asociativo, la neurociencia y la gestión emocional,
+            porque la ciencia nos muestra cómo aprenden realmente los perros: a través de la experiencia,
+            la emoción y la coherencia del entorno.
+          </p>
+          <p>
+            No utilizo métodos invasivos ni “técnicas milagrosas”; prefiero trabajar sobre el entorno,
+            la rutina y el estado emocional del perro. Cuando el perro comprende qué se espera de él,
+            y puede hacerlo sin miedo ni presión, el aprendizaje se consolida y el vínculo se fortalece.
+          </p>
+        </article>
+
+        <article class="method2-card">
+          <div class="card-icon">🐺</div>
+          <h3 class="card-title">Lo que me recuerda el lobo</h3>
+          <p>
+            Me gusta observar el comportamiento del lobo. Aunque no lo comparo al 100% con el perro doméstico,
+            siempre encuentro recordatorios valiosos: cómo gestionan el conflicto, cómo cooperan o cómo
+            enseñan a sus crías con calma y paciencia.
+          </p>
+          <p>
+            Observar a los lobos me ayuda a recordar de dónde viene el perro y qué necesita para sentirse
+            seguro dentro de nuestra “manada humana”.
+          </p>
+        </article>
+
+        <article class="method2-card">
+          <div class="card-icon">👩‍🏫</div>
+          <h3 class="card-title">Aprendemos juntas</h3>
+          <p>
+            Mis sesiones están pensadas para que el tutor aprenda tanto como el perro. Entender su lenguaje,
+            su ritmo y su manera de aprender es la base de una convivencia sana y duradera.
+          </p>
+          <p>
+            Convertimos la teoría en práctica con rutinas reales y objetivos medibles, para que veas cambios
+            desde el primer día sin castigos ni presiones.
+          </p>
+        </article>
+      </div>
+
+      <div class="method-cta-global">
+        <a class="btn btn-lg" href="tarifas.html">
+          Quiero aplicarlo a mi perro
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipo -->
+  <section class="section section-team" id="equipo">
+    <div class="container">
+      <div class="section-head">
+        <h2>Nuestro equipo</h2>
+        <ul class="pills">
+          <li>Guía con ciencia</li>
+          <li>Vínculo y calma</li>
+          <li>Aprendizaje real</li>
+        </ul>
+      </div>
+
+      <div class="team-grid">
+        <article class="team-card">
+          <div class="team-photo" style="--y:30%">
+            <img src="assets/images/equipo/roma.jpg" alt="Roma, perra maestra de Animanía">
+          </div>
+          <h3>Roma <span class="team-role">Perra maestra</span></h3>
+          <p>
+            Roma es mi compañera y maestra de cuatro patas 🐾. Con ella he aprendido más de lo que cualquier libro
+            podría enseñarme: paciencia, comunicación y presencia real. Me recuerda que detrás de cada
+            comportamiento hay una emoción y una historia que merece ser entendida con calma.
+          </p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-photo" style="--y:50%">
+            <img src="assets/images/equipo/chispa.jpg" alt="Chispa, perra maestra retirada">
+          </div>
+          <h3>Chispa <span class="team-role">Perra maestra (retirada)</span></h3>
+          <p>
+            Chispa es mi perra maestra jubilada. Crecimos juntas y gracias a ella descubrí mi pasión por entender a
+            los perros. Sigue siendo mi mayor referente de lealtad, calma y conexión.
+          </p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-photo" style="--y:35%">
+            <img src="assets/images/equipo/blanca.jpg" alt="Blanca, educadora canina">
+          </div>
+          <h3>Blanca <span class="team-role">Educadora canina</span></h3>
+          <p>
+            Soy Blanca Hermita (ATV y ACV) y fundadora de Animanía. Acompaño a familias desde la ciencia y la empatía,
+            inspirándome en la observación del lobo y la comunicación natural entre especies.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lb" id="lb" aria-hidden="true">
+    <button class="lb-close" aria-label="Cerrar">×</button>
+    <img alt="">
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Animanía. Todos los derechos reservados.</p>
+      <ul class="social-links">
+        <li><a href="https://www.instagram.com/animania.canina/" aria-label="Instagram" target="_blank"
+            rel="noopener noreferrer"><img src="assets/images/instagram.svg" alt="Instagram"></a></li>
+        <li><a href="https://www.tiktok.com/@animaniacanina" aria-label="TikTok" target="_blank"
+            rel="noopener noreferrer"><img src="assets/images/tiktok.svg" alt="TikTok"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

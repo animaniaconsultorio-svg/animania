@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto – Animanía</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo_2.jpeg" alt="Animanía Logo"/>
+      </a>
+      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="tarifas.html">Tarifas</a></li>
+          <li><a class="active" href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero contacto -->
+  <section class="contact-hero" aria-label="Ponernos en contacto">
+    <div class="container">
+      <h1>¿Hablamos?</h1>
+      <p class="lead">
+        Cuéntame de tu perro y te propongo el camino más simple y amable para vuestra convivencia.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn" href="https://calendly.com/animania-consultorio/1aesoria-1" target="_blank" rel="noopener noreferrer">
+          Reserva una asesoría
+        </a>
+        <a class="btn btn-secondary"
+           href="https://wa.me/34603572022?text=Hola%20Animan%C3%ADa%2C%20me%20gustar%C3%ADa%20consultarte%20sobre%20mi%20perro.%20Mi%20nombre%20es..."
+           target="_blank" rel="noopener noreferrer">
+          Escríbeme por WhatsApp
+        </a>
+      </div>
+
+      <ul class="pills contact-pills">
+        <li>Sin castigos</li>
+        <li>Rutinas reales</li>
+        <li>Calma y empatía</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contenido -->
+  <main class="section">
+    <div class="container contact-grid">
+
+      <!-- Formulario -->
+      <section class="card form-card" aria-labelledby="contacto-form">
+        <h2 id="contacto-form">Envíame un mensaje</h2>
+
+        <form id="contactForm" novalidate>
+          <div class="form-rows">
+            <div class="field">
+              <input id="name" name="name" type="text" placeholder=" " required/>
+              <label for="name">Nombre</label>
+            </div>
+
+            <div class="field">
+              <input id="email" name="email" type="email" placeholder=" " required/>
+              <label for="email">Correo electrónico</label>
+            </div>
+
+            <div class="field">
+              <input id="phone" name="phone" type="tel" placeholder=" "/>
+              <label for="phone">Teléfono (opcional)</label>
+            </div>
+
+            <div class="field field-select">
+                <label for="topic" class="sr-only">Motivo</label>
+                <select id="topic" name="topic" required>
+                  <option value="" disabled selected hidden>Elige un motivo</option>
+                  <option>Sesión online</option>
+                  <option>Sesión presencial</option>
+                  <option>Paseo / correa</option>
+                  <option>Cachorro</option>
+                  <option>Ansiedad / miedos</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              
+              
+              
+
+            <div class="field field-textarea">
+              <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+              <label for="message">Cuéntame brevemente tu caso</label>
+            </div>
+          </div>
+
+          <button class="btn" type="submit">Enviar</button>
+          <p class="muted tiny">
+            Si el botón no abre tu correo, escríbeme a
+            <a href="mailto:animania.consultorio@gmail.com">animania.consultorio@gmail.com</a>
+          </p>
+          <p class="muted tiny">
+            Al enviar aceptas el tratamiento de tus datos para dar respuesta a tu consulta.
+          </p>
+        </form>
+      </section>
+
+      <!-- Info lateral -->
+      <aside class="card contact-info">
+        <h3>Respuesta en &lt; 24 h</h3>
+        <ul class="info-list">
+          <li><strong>Correo:</strong> <a href="mailto:animania.consultorio@gmail.com">animania.consultorio@gmail.com</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/603572022" target="_blank" rel="noopener">+34 603 57 20 22</a></li>
+        </ul>
+
+        <div class="mini-cta">
+          <p class="muted">¿Prefieres agendar directo?</p>
+          <a class="btn btn-secondary" href="https://calendly.com/animania-consultorio/1aesoria-1" target="_blank" rel="noopener">Ver disponibilidad</a>
+        </div>
+
+        <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Sigueme para más tips</p>
+      <ul class="social-links">
+        <li><a href="https://www.instagram.com/animania.canina/" aria-label="Instagram" target="_blank"
+            rel="noopener noreferrer"><img src="assets/images/instagram.svg" alt="Instagram"></a></li>
+        <li><a href="https://www.tiktok.com/@animaniacanina" aria-label="TikTok" target="_blank"
+            rel="noopener noreferrer"><img src="assets/images/tiktok.svg" alt="TikTok"></a></li>
+      </ul>
+    </div>
+  </footer>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Animanía. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+  <!-- Script: convierte el envío en un mailto listo para enviar -->
+  <script>
+    (function(){
+      const form = document.getElementById('contactForm');
+      form?.addEventListener('submit', function(e){
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const topic = document.getElementById('topic').value || 'Consulta';
+        const message = document.getElementById('message').value.trim();
+
+        if(!name || !email || !message || !topic){
+          alert('Por favor, completa nombre, email, motivo y mensaje.');
+          return;
+        }
+
+        const subject = `Nueva consulta – ${topic}`;
+        const body =
+`Nombre: ${name}
+Email: ${email}
+Teléfono: ${phone || '—'}
+Motivo: ${topic}
+
+Mensaje:
+${message}
+
+(Enviado desde animania.es)`;
+
+        const mailto = `mailto:animania.consultorio@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailto;
+      });
+    })();
+  </script>
+</body>
+</html>
